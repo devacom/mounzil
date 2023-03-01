@@ -3,7 +3,7 @@
   <id>com.github.devacom.mounzil</id>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <name>mounzil Download Manager</name>
+  <name>Mounzil</name>
   <summary>Download manager</summary>
   <description>
     <p>mounzil is easy to use graphical download manager that speed up your downloads!</p>
@@ -20,7 +20,7 @@
   <launchable type="desktop-id">com.github.devacom.mounzil.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <caption>mounzil Download Manaer</caption>
+      <caption>Mounzil</caption>
       <image width="800" height="450">https://devacom.github.io/img/screen/mounzil.png</image>
     </screenshot>
   </screenshots>
