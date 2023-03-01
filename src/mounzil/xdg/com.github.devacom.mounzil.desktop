@@ -1,0 +1,26 @@
+[Desktop Entry]
+Actions=Open;Tray;
+Categories=Qt;Network;
+Comment[en_US]=Download Manager
+Comment=Download Manager
+Exec=Mounzil
+GenericName[en_US]=Download Manager
+GenericName=Download Manager
+Icon=Mounzil
+Keywords=Internet;WWW;Web;
+Name[en_US]=Mounzil
+Name=Mounzil
+StartupNotify=true
+StartupWMClass=mounzil
+Terminal=false
+Type=Application
+X-KDE-SubstituteUID=false
+
+[Desktop Action Open]
+Exec=mounzil
+Name=Start Mounzil
+
+[Desktop Action Tray]
+Exec=mounzil --tray
+Name=Start in System Tray
+
