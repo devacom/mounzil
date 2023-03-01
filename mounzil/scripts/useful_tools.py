@@ -43,13 +43,13 @@ home_address = os.path.expanduser("~")
 def determineConfigFolder():
     if os_type in OS.UNIX_LIKE:
         config_folder = os.path.join(
-            home_address, ".config/mounzil_download_manager")
+            home_address, ".config/mounzil")
     elif os_type == OS.OSX:
         config_folder = os.path.join(
-            home_address, "Library/Application Support/mounzil_download_manager")
+            home_address, "Library/Application Support/mounzil")
     elif os_type == OS.WINDOWS:
         config_folder = os.path.join(
-            home_address, 'AppData', 'Local', 'mounzil_download_manager')
+            home_address, 'AppData', 'Local', 'mounzil')
 
     return config_folder
 

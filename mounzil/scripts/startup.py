@@ -41,7 +41,7 @@ def checkstartup():
     # check if it is mac
     elif os_type == OS.OSX:
         # OS X
-        if os.path.exists(home_address + "/Library/LaunchAgents/com.mounzildm.plist"):
+        if os.path.exists(home_address + "/Library/LaunchAgents/com.devacom.plist"):
             return True
         else:
             return False
@@ -107,7 +107,7 @@ StartupWMClass=mounzil-download-Manager
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.mounzildm.mounzil</string>
+	<string>com.devacom.mounzil</string>
 	<key>Program</key>
 	<string>''' + cwd + '''/mounzil Download Manager</string>
 	<key>ProgramArguments</key>
@@ -119,10 +119,10 @@ StartupWMClass=mounzil-download-Manager
 </dict>
 </plist>\n'''
         startupfile = open(
-            home_address + '/Library/LaunchAgents/com.mounzildm.plist', 'w+')
+            home_address + '/Library/LaunchAgents/com.devacom.plist', 'w+')
         startupfile.write(entry)
         os.system('launchctl load ' + home_address +
-                  "/Library/LaunchAgents/com.mounzildm.plist")
+                  "/Library/LaunchAgents/com.devacom.plist")
     # check if it is Windows
     elif os_type == OS.WINDOWS:
 
@@ -154,9 +154,9 @@ def removestartup():
         # OS X
         if checkstartup():
             os.system('launchctl unload ' + home_address +
-                      "/Library/LaunchAgents/com.mounzildm.plist")
+                      "/Library/LaunchAgents/com.devacom.plist")
             os.remove(home_address +
-                      "/Library/LaunchAgents/com.mounzildm.plist")
+                      "/Library/LaunchAgents/com.devacom.plist")
 
     # check if it is Windows
     elif os_type == OS.WINDOWS:

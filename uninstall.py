@@ -27,8 +27,8 @@ if os_type == 'Linux':
     path_list = ['/usr/share/man/man1/mounzil.1.gz',
                  '/usr/share/pixmaps/mounzil.svg',
                  '/usr/share/pixmaps/mounzil-tray.svg',
-                 '/usr/share/applications/com.github.mounzildm.mounzil.desktop',
-                 '/usr/share/metainfo/com.github.mounzildm.mounzil.appdata.xml',
+                 '/usr/share/applications/com.github.devacom.mounzil.desktop',
+                 '/usr/share/metainfo/com.github.devacom.mounzil.appdata.xml',
                  '/usr/bin/mounzil']
 
 elif os_type == 'FreeBSD' or os_type == 'OpenBSD':

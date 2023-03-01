@@ -206,15 +206,15 @@ class AboutWindow_Ui(QWidget):
         self.title_label.setText(QCoreApplication.translate("about_ui_tr", "mounzil Download Manager"))
         self.version_label.setText(QCoreApplication.translate("about_ui_tr", "Version 3.2.0"))
         self.site2_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                            "<a href=https://mounzildm.github.io>https://mounzildm.github.io</a>",
+                                                            "<a href=https://devacom.github.io>https://devacom.github.io</a>",
                                                             "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
         self.telegram_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                               "<a href=https://telegram.me/mounzildm>https://telegram.me/mounzildm</a>",
+                                                               "<a href=https://telegram.me/devacom>https://telegram.me/devacom</a>",
                                                                "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
         self.twitter_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                              "<a href=https://twitter.com/mounzildm>https://twitter.com/mounzildm</a>",
+                                                              "<a href=https://twitter.com/devacom>https://twitter.com/devacom</a>",
                                                               "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
         # developers_tab
@@ -226,7 +226,7 @@ class AboutWindow_Ui(QWidget):
 
         self.contributors_thank_label.setText(QCoreApplication.translate('about_ui_tr', 'Special thanks to:'))
         self.contributors_link_label.setText(
-            "<a href=https://github.com/mounzildm/mounzil/graphs/contributors>our contributors</a>")
+            "<a href=https://github.com/devacom/mounzil/graphs/contributors>our contributors</a>")
 
         # License
         self.license_text.setPlainText("""

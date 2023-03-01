@@ -27,7 +27,7 @@ os_type = platform.system()
 
 def playNotification(file):
     # getting user setting from mounzil_setting
-    mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+    mounzil_setting = QSettings('mounzil', 'mounzil')
 
     # enabling or disabling notification sound in mounzil_setting
     enable_notification = str(mounzil_setting.value('settings/sound'))

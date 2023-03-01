@@ -5243,11 +5243,11 @@ class MainWindow(MainWindow_Ui):
 
     # this method opens issues page in github
     def reportIssue(self, menu=None):
-        osCommands.xdgOpen('https://github.com/mounzildm/mounzil/issues')
+        osCommands.xdgOpen('https://github.com/devacom/mounzil/issues')
 
     # this method opens mounzil wiki page in github
     def mounzilHelp(self, menu=None):
-        osCommands.xdgOpen('https://github.com/mounzildm/mounzil/wiki')
+        osCommands.xdgOpen('https://github.com/devacom/mounzil/wiki')
 
     # this method opens update menu
 

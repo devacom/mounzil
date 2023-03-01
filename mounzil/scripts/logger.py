@@ -26,7 +26,7 @@ if not os.path.exists(config_folder):
     os.makedirs(config_folder)
 
 # log file address
-log_file = os.path.join(str(config_folder), 'mounzildm.log')
+log_file = os.path.join(str(config_folder), 'devacom.log')
 
 if not os.path.isfile(log_file):
     touch(log_file)

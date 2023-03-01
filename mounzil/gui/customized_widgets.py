@@ -21,7 +21,7 @@ except:
     from PyQt5.QtCore import QSettings, Qt
 
 # import mounzil_setting
-mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+mounzil_setting = QSettings('mounzil', 'mounzil')
 
 # check ui_direction RTL or LTR
 ui_direction = mounzil_setting.value('ui_direction')

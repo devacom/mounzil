@@ -41,11 +41,11 @@ mounzil_tmp = os.path.join(config_folder, 'mounzil_tmp')
 for folder in [config_folder, mounzil_tmp]:
     osCommands.makeDirs(folder)
 
-# mounzildm.log file contains mounzil log.
+# devacom.log file contains mounzil log.
 from mounzil.scripts import logger
 
 # refresh logs!
-log_file = os.path.join(str(config_folder), 'mounzildm.log')
+log_file = os.path.join(str(config_folder), 'devacom.log')
 
 # get current time
 current_time = time.strftime('%Y/%m/%d %H:%M:%S')
@@ -112,7 +112,7 @@ plugins_db.closeConnections()
 # mounzil is using QSettings for saving windows size and windows
 # position and program settings.
 
-mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+mounzil_setting = QSettings('mounzil', 'mounzil')
 
 mounzil_setting.beginGroup('settings')
 

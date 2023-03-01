@@ -32,7 +32,7 @@ if [ "$resources" == "1" ];then
     # generate resource.py file
     pyrcc5 resources.qrc -o "$parent_dir/mounzil/gui/resources.py"
 
-    echo  "$parent_dir/mounzil/gui/resource.py is generated!"
+    echo  "$parent_dir/mounzil/gui/resources.py is generated!"
 fi
 
 if [ "$create_qm_files" == "1" ];then

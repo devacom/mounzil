@@ -87,7 +87,7 @@ else:  # for windows
     from winerror import ERROR_ALREADY_EXISTS
     from sys import exit
 
-    handle = CreateMutex(None, 1, 'mounzil_download_manager')
+    handle = CreateMutex(None, 1, 'mounzil')
 
     if GetLastError() == ERROR_ALREADY_EXISTS:
         lock_file_validation = False
@@ -110,7 +110,7 @@ if lock_file_validation:
 
 
 # load mounzil_settings
-mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+mounzil_setting = QSettings('mounzil', 'mounzil')
 
 
 class mounzilApplication(QApplication):
@@ -388,16 +388,16 @@ def main():
 
 
         # create QApplication
-        mounzil_download_manager = mounzilApplication(sys.argv)
+        mounzil = mounzilApplication(sys.argv)
 
         # setQuitOnLastWindowClosed(False) is needed to prevent mounzil exiting,
         # when it's minimized in system tray.
-        mounzil_download_manager.setQuitOnLastWindowClosed(False)
+        mounzil.setQuitOnLastWindowClosed(False)
 
         # Enable High DPI display
         try:
             if hasattr(QStyleFactory, 'AA_UseHighDpiPixmaps'):
-                mounzil_download_manager.setAttribute(Qt.AA_UseHighDpiPixmaps)
+                mounzil.setAttribute(Qt.AA_UseHighDpiPixmaps)
         except:
             from mounzil.scripts import logger
 
@@ -405,39 +405,39 @@ def main():
             logger.sendToLog('Qt.AA_UseHighDpiPixmaps is not available!', "ERROR")
 
         # set organization name and domain and application name
-        QCoreApplication.setOrganizationName('mounzil_download_manager')
+        QCoreApplication.setOrganizationName('mounzil')
         QCoreApplication.setApplicationName('mounzil')
 
         # mounzil setting
-        mounzil_download_manager.setting = QSettings()
+        mounzil.setting = QSettings()
 
         # get user's desired font and style , ... from setting
-        custom_font = mounzil_download_manager.setting.value('settings/custom-font')
-        font = mounzil_download_manager.setting.value('settings/font')
-        font_size = int(mounzil_download_manager.setting.value('settings/font-size'))
-        style = mounzil_download_manager.setting.value('settings/style')
-        color_scheme = mounzil_download_manager.setting.value('settings/color-scheme')
-        ui_direction = mounzil_download_manager.setting.value('ui_direction')
+        custom_font = mounzil.setting.value('settings/custom-font')
+        font = mounzil.setting.value('settings/font')
+        font_size = int(mounzil.setting.value('settings/font-size'))
+        style = mounzil.setting.value('settings/style')
+        color_scheme = mounzil.setting.value('settings/color-scheme')
+        ui_direction = mounzil.setting.value('ui_direction')
 
         # set style
-        mounzil_download_manager.setmounzilStyle(style)
+        mounzil.setmounzilStyle(style)
 
         # set font
-        mounzil_download_manager.setmounzilFont(font, font_size, custom_font)
+        mounzil.setmounzilFont(font, font_size, custom_font)
 
         # set color_scheme
-        mounzil_download_manager.setmounzilColorScheme(color_scheme)
+        mounzil.setmounzilColorScheme(color_scheme)
 
         # set ui direction
         if ui_direction == 'rtl':
-            mounzil_download_manager.setLayoutDirection(Qt.RightToLeft)
+            mounzil.setLayoutDirection(Qt.RightToLeft)
 
         elif ui_direction in 'ltr':
-            mounzil_download_manager.setLayoutDirection(Qt.LeftToRight)
+            mounzil.setLayoutDirection(Qt.LeftToRight)
 
         # run mainwindow
         try:
-            mainwindow = MainWindow(start_in_tray, mounzil_download_manager, mounzil_download_manager.setting)
+            mainwindow = MainWindow(start_in_tray, mounzil, mounzil.setting)
             if start_in_tray:
                 mainwindow.hide()
             else:
@@ -454,7 +454,7 @@ def main():
             error_window = ErrorWindow(error_message)
             error_window.show()
 
-        sys.exit(mounzil_download_manager.exec_())
+        sys.exit(mounzil.exec_())
 
     elif not((args.parent_window or unknownargs)):
 

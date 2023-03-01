@@ -43,7 +43,7 @@ home_address = os.path.expanduser("~")
 os_type = platform.system()
 
 # mounzil setting
-mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+mounzil_setting = QSettings('mounzil', 'mounzil')
 
 # host is localhost
 host = 'localhost'

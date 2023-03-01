@@ -220,7 +220,7 @@ def getProxy():
         socks_message = "mounzil and aria2 don't support socks\n\
         you must convert socks proxy to http proxy.\n\
         Please read this for more help:\n\
-            https://github.com/mounzildm/mounzil/wiki/Privoxy"
+            https://github.com/devacom/mounzil/wiki/Privoxy"
         logger.sendToLog(socks_message, 'ERROR')
 
     # return results

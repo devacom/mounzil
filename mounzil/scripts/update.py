@@ -70,7 +70,7 @@ class checkupdate(QWidget):
 
         # release link
         self.link_label = QLabel(
-            '<a href=https://github.com/mounzildm/mounzil/releases>https://github.com/mounzildm/mounzil/releases</a>')
+            '<a href=https://github.com/devacom/mounzil/releases>https://github.com/devacom/mounzil/releases</a>')
         self.link_label.setAlignment(QtCore.Qt.AlignCenter)
         self.link_label.setOpenExternalLinks(True)
 
@@ -113,7 +113,7 @@ class checkupdate(QWidget):
 
         try:
             # get information dictionary from github
-            updatesource = requests.get('https://mounzildm.github.io/version')
+            updatesource = requests.get('https://devacom.github.io/version')
 
             updatesource_text = updatesource.text
             updatesource_dict = ast.literal_eval(updatesource_text)

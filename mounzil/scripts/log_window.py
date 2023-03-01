@@ -39,7 +39,7 @@ class LogWindow(LogWindow_Ui):
         self.copy_log_pushButton.setEnabled(False)
 
 # log file address
-        self.log_file = os.path.join(str(config_folder), 'mounzildm.log')
+        self.log_file = os.path.join(str(config_folder), 'devacom.log')
 
         f = open(self.log_file, 'r')
         f_lines = f.readlines()
@@ -89,7 +89,7 @@ class LogWindow(LogWindow_Ui):
         self.text_edit.insertPlainText(self.text)
 
     def reportPushButtonPressed(self, button):
-        osCommands.xdgOpen('https://github.com/mounzildm/mounzil/issues')
+        osCommands.xdgOpen('https://github.com/devacom/mounzil/issues')
 
     def closePushButtonPressed(self, button):
         self.close()

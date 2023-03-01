@@ -140,10 +140,10 @@ def browserIntegration(browser):
 
         if browser in BROWSER.CHROME_FAMILY:
             native_message_folder = os.path.join(
-                home_address, 'AppData\Local\mounzil_download_manager', 'chrome')
+                home_address, 'AppData\Local\mounzil', 'chrome')
         else:
             native_message_folder = os.path.join(
-                home_address, 'AppData\Local\mounzil_download_manager', 'firefox')
+                home_address, 'AppData\Local\mounzil', 'firefox')
 
     # WebExtension native hosts file prototype
     webextension_json_connector = {
@@ -160,8 +160,8 @@ def browserIntegration(browser):
     # Add firefox keys
     elif browser == BROWSER.FIREFOX:
         webextension_json_connector["allowed_extensions"] = [
-            "com.mounzil.pdmchromewrapper@mounzildm.github.io",
-            "com.mounzil.pdmchromewrapper.offline@mounzildm.github.io"
+            "com.mounzil.pdmchromewrapper@devacom.github.io",
+            "com.mounzil.pdmchromewrapper.offline@devacom.github.io"
         ]
 
     # Build final path

@@ -69,7 +69,7 @@ class ErrorWindow(QWidget):
         self.close_pushButton.clicked.connect(self.closePushButtonPressed)
 
     def reportPushButtonPressed(self, button):
-        osCommands.xdgOpen('https://github.com/mounzildm/mounzil/issues')
+        osCommands.xdgOpen('https://github.com/devacom/mounzil/issues')
 
     # close window with ESC key
     def keyPressEvent(self, event):
@@ -91,6 +91,6 @@ class ErrorWindow(QWidget):
         mounzil_db.closeConnections()
 
         # Reset mounzil_setting
-        mounzil_setting = QSettings('mounzil_download_manager', 'mounzil')
+        mounzil_setting = QSettings('mounzil', 'mounzil')
         mounzil_setting.clear()
         mounzil_setting.sync()
