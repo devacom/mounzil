@@ -64,15 +64,15 @@ import time
 import sys
 import os
 
-global youtube_dl_is_installed
+global yt_dlp_is_installed
 try:
     from mounzil.scripts.video_finder_addlink import VideoFinderAddLink
-    youtube_dl_is_installed = True
+    yt_dlp_is_installed = True
 except ModuleNotFoundError:
-    # if youtube_dl module is not installed:
+    # if yt_dlp module is not installed:
     logger.sendToLog(
-        "youtube_dl is not installed.", "ERROR")
-    youtube_dl_is_installed = False
+        "yt_dlp is not installed.", "ERROR")
+    yt_dlp_is_installed = False
 
 # CheckVersionsThread thread can change this variable.
 global ffmpeg_is_installed
@@ -5624,9 +5624,9 @@ class MainWindow(MainWindow_Ui):
 
     def showVideoFinderAddLinkWindow(self, input_dict=None, menu=None):
 
-        # first check youtube_dl_is_installed and ffmpeg_is_installed value!
-        # if youtube_dl or ffmpeg is not installed show an error message.
-        if youtube_dl_is_installed and ffmpeg_is_installed:
+        # first check yt_dlp_is_installed and ffmpeg_is_installed value!
+        # if yt_dlp or ffmpeg is not installed show an error message.
+        if yt_dlp_is_installed and ffmpeg_is_installed:
             if not(input_dict):
                 input_dict = {}
             video_finder_addlink_window = VideoFinderAddLink(
@@ -5638,8 +5638,8 @@ class MainWindow(MainWindow_Ui):
         else:
             error_message = ''
 
-            if not(youtube_dl_is_installed):
-                error_message = QCoreApplication.translate("mainwindow_src_ui_tr", 'youtube-dl is not installed!')
+            if not(yt_dlp_is_installed):
+                error_message = QCoreApplication.translate("mainwindow_src_ui_tr", 'yt-dlp is not installed!')
                 error_message = error_message + '\n'
 
             if not(ffmpeg_is_installed):

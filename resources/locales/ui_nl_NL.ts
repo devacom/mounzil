@@ -689,8 +689,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="5619"/>
-        <source>youtube-dl is not installed!</source>
-        <translation>youtube-dl is niet geïnstalleerd</translation>
+        <source>yt-dlp is not installed!</source>
+        <translation>yt-dlp is niet geïnstalleerd</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="5624"/>

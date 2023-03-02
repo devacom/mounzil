@@ -29,13 +29,13 @@ from time import time, sleep
 from functools import partial
 from random import random
 from copy import deepcopy
-import youtube_dl
+import yt_dlp
 import re
 import os
 
-# write youtube_dl version in log
-logger.sendToLog('youtube_dl version: '
-                 + str(youtube_dl.version.__version__),
+# write yt_dlp version in log
+logger.sendToLog('yt_dlp version: '
+                 + str(yt_dlp.version.__version__),
                  'INFO')
 
 # download manager config folder .
@@ -56,27 +56,27 @@ class MediaListFetcherThread(QThread):
 
         self.cookie_path = os.path.join(mounzil_tmp, '.{}{}'.format(time(), random()))
 
-        # youtube options must be added to youtube_dl_options_dict in dictionary format
-        self.youtube_dl_options_dict = {'dump_single_json': True,
+        # youtube options must be added to yt_dlp_options_dict in dictionary format
+        self.yt_dlp_options_dict = {'dump_single_json': True,
                                         'quiet': True,
                                         'noplaylist': True,
                                         'no_warnings': True
                                         }
 
         # cookies
-        self.youtube_dl_options_dict['cookies'] = str(self.cookie_path)
+        self.yt_dlp_options_dict['cookies'] = str(self.cookie_path)
 
         # referer
         if 'referer' in video_dict.keys() and video_dict['referer']:
-            self.youtube_dl_options_dict['referer'] = str(video_dict['referer'])
+            self.yt_dlp_options_dict['referer'] = str(video_dict['referer'])
 
         # user_agent
         if 'user_agent' in video_dict.keys() and video_dict['user_agent']:
-            self.youtube_dl_options_dict['user-agent'] = str(video_dict['user_agent'])
+            self.yt_dlp_options_dict['user-agent'] = str(video_dict['user_agent'])
 
         # load_cookies
         if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
-            # We need to convert raw cookies to http cookie file to use with youtube-dl.
+            # We need to convert raw cookies to http cookie file to use with yt-dlp.
             self.cookies = self.makeHttpCookie(video_dict['load_cookies'])
 
         # Proxy
@@ -88,14 +88,14 @@ class MediaListFetcherThread(QThread):
                 if 'referer' in video_dict.keys() and video_dict['proxy_user']:
                     ip_port = 'http://{}:{}@{}'.format(video_dict['proxy_user'], video_dict['proxy_passwd'], ip_port)
 
-                self.youtube_dl_options_dict['proxy'] = str(ip_port)
+                self.yt_dlp_options_dict['proxy'] = str(ip_port)
             except:
                 pass
 
         if 'download_user' in video_dict.keys() and video_dict['download_user']:
             try:
-                self.youtube_dl_options_dict['username'] = str(video_dict['download_user'])
-                self.youtube_dl_options_dict['password'] = str(video_dict['download_passwd'])
+                self.yt_dlp_options_dict['username'] = str(video_dict['download_user'])
+                self.yt_dlp_options_dict['password'] = str(video_dict['download_passwd'])
             except:
                 pass
 
@@ -110,7 +110,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = youtube_dl.YoutubeDL(self.youtube_dl_options_dict)
+            ydl = yt_dlp.YoutubeDL(self.yt_dlp_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,

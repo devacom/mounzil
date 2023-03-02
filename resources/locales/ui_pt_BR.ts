@@ -690,8 +690,8 @@ recebimento deve ser concluído primeiro:</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="5619"/>
-        <source>youtube-dl is not installed!</source>
-        <translation>O youtube-dl não está instalado!</translation>
+        <source>yt-dlp is not installed!</source>
+        <translation>O yt-dlp não está instalado!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="5624"/>
