@@ -244,7 +244,7 @@ class VideoFinderAddLink(AddLinkWindow):
                        self.audio_format_selection_comboBox]:
             advanced_format_selection_horizontalLayout.addWidget(widget)
 
-        # Set Texts
+        # Set Texts marked by nouibat
         self.url_submit_pushButtontton.setText(QCoreApplication.translate("ytaddlink_src_ui_tr", 'Fetch Media List'))
         self.select_format_label.setText(QCoreApplication.translate("ytaddlink_src_ui_tr", 'Select a format'))
 
