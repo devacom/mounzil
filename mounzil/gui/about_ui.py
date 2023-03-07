@@ -209,24 +209,13 @@ class AboutWindow_Ui(QWidget):
                                                             "<a href=https://devacom.github.io>https://devacom.github.io</a>",
                                                             "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
-        self.telegram_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                               "<a href=https://telegram.me/devacom>https://telegram.me/devacom</a>",
-                                                               "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
-
-        self.twitter_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                              "<a href=https://twitter.com/devacom>https://twitter.com/devacom</a>",
-                                                              "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
-
         # developers_tab
         self.developers_title_label.setText(QCoreApplication.translate('about_ui_tr', 'Developers:'))
 
         self.name_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                           "\nAliReza AmirSamimi\nMohammadreza Abdollahzadeh\nSadegh Alirezaie\nMostafa Asadi\nMohammadAmin Vahedinia\nJafar Akhondali\nH.Rostami\nEhsan Titish",
+                                                           "\nTaha H. Nouibat\nThanks to perseplis developers:\nAliReza AmirSamimi\nMohammadreza Abdollahzadeh\nSadegh Alirezaie\nMostafa Asadi\nMohammadAmin Vahedinia\nJafar Akhondali\nH.Rostami\nEhsan Titish",
                                                            "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
-        self.contributors_thank_label.setText(QCoreApplication.translate('about_ui_tr', 'Special thanks to:'))
-        self.contributors_link_label.setText(
-            "<a href=https://github.com/devacom/mounzil/graphs/contributors>our contributors</a>")
 
         # License
         self.license_text.setPlainText("""

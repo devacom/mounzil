@@ -4,7 +4,7 @@
 <context>
     <name>about_ui_tr</name>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="248"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="237"/>
         <source>About mounzil</source>
         <translation type="unfinished"></translation>
     </message>
@@ -25,25 +25,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="212"/>
-        <source>&lt;a href=https://telegram.me/devacom&gt;https://telegram.me/devacom&lt;/a&gt;</source>
-        <comment>TRANSLATORS NOTE: YOU REALLY DON&apos;T NEED TO TRANSLATE THIS PART!</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="216"/>
-        <source>&lt;a href=https://twitter.com/devacom&gt;https://twitter.com/devacom&lt;/a&gt;</source>
-        <comment>TRANSLATORS NOTE: YOU REALLY DON&apos;T NEED TO TRANSLATE THIS PART!</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="221"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="213"/>
         <source>Developers:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="223"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="215"/>
         <source>
+Taha H. Nouibat
+Thanks to perseplis developers:
 AliReza AmirSamimi
 Mohammadreza Abdollahzadeh
 Sadegh Alirezaie
@@ -56,27 +46,22 @@ Ehsan Titish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="227"/>
-        <source>Special thanks to:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="249"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="238"/>
         <source>Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="250"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="239"/>
         <source>Translators</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="251"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="240"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="254"/>
+        <location filename="../../mounzil/gui/about_ui.py" line="243"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
