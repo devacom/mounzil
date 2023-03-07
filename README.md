@@ -1,2 +1,2 @@
 # mounzil
-Munzil is a download manager based on Persepolis which is a graphical user interface of aria2.
+Mounzil is a download manager based on Persepolis which is a graphical user interface of aria2.
