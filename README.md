@@ -12,3 +12,8 @@ Mounzil is a download manager based on Persepolis which is a graphical user inte
 - Scheduling downloads
 - Download queuing
 - and many more!
+
+### Credits
+
+**Taha H. Nouibat:** Mounzil developer and manager  
+[GitHub](https://github.com/devacom) | [E-mail](mailto:devacom@pm.me)
