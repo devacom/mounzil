@@ -66,14 +66,6 @@ class MediaListFetcherThread(QThread):
         # cookies
         self.yt_dlp_options_dict['cookies'] = str(self.cookie_path)
 
-        # referer
-        if 'referer' in video_dict.keys() and video_dict['referer']:
-            self.yt_dlp_options_dict['referer'] = str(video_dict['referer'])
-
-        # user_agent
-        if 'user_agent' in video_dict.keys() and video_dict['user_agent']:
-            self.yt_dlp_options_dict['user-agent'] = str(video_dict['user_agent'])
-
         # load_cookies
         if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
             # We need to convert raw cookies to http cookie file to use with yt-dlp.
@@ -84,9 +76,6 @@ class MediaListFetcherThread(QThread):
             try:
                 # ip + port
                 ip_port = 'http://{}:{}'.format(video_dict['ip'], video_dict['port'])
-
-                if 'referer' in video_dict.keys() and video_dict['proxy_user']:
-                    ip_port = 'http://{}:{}@{}'.format(video_dict['proxy_user'], video_dict['proxy_passwd'], ip_port)
 
                 self.yt_dlp_options_dict['proxy'] = str(ip_port)
             except:
@@ -594,7 +583,7 @@ class VideoFinderAddLink(AddLinkWindow):
             options['download_passwd'] = self.download_pass_lineEdit.text()
 
         # These info (keys) are required for spider to find file size, because spider() does not check if key exists.
-        additional_info = ['header', 'load_cookies', 'user_agent', 'referer', 'out']
+        additional_info = ['header', 'load_cookies', 'out']
         for i in additional_info:
             if i not in self.plugin_add_link_dictionary.keys():
                 options[i] = None
@@ -740,23 +729,11 @@ class VideoFinderAddLink(AddLinkWindow):
         # get download_path
         download_path = self.download_folder_lineEdit.text()
 
-        # referer
-        if self.referer_lineEdit.text() != '':
-            referer = self.referer_lineEdit.text()
-        else:
-            referer = None
-
         # header
         if self.header_lineEdit.text() != '':
             header = self.header_lineEdit.text()
         else:
             header = None
-
-        # user_agent
-        if self.user_agent_lineEdit.text() != '':
-            user_agent = self.user_agent_lineEdit.text()
-        else:
-            user_agent = None
 
         # load_cookies
         if self.load_cookies_lineEdit.text() != '':
@@ -767,7 +744,7 @@ class VideoFinderAddLink(AddLinkWindow):
         add_link_dictionary_list = []
         if len(link_list) == 1:
             # save information in a dictionary(add_link_dictionary).
-            add_link_dictionary = {'referer': referer, 'header': header, 'user_agent': user_agent, 'load_cookies': load_cookies,
+            add_link_dictionary = {'header': header, 'load_cookies': load_cookies,
                                    'out': name_list[0], 'start_time': start_time, 'end_time': end_time, 'link': link_list[0], 'ip': ip,
                                    'port': port, 'proxy_user': proxy_user, 'proxy_passwd': proxy_passwd,
                                    'download_user': download_user, 'download_passwd': download_passwd,
@@ -776,13 +753,13 @@ class VideoFinderAddLink(AddLinkWindow):
             add_link_dictionary_list.append(add_link_dictionary)
 
         else:
-            video_add_link_dictionary = {'referer': referer, 'header': header, 'user_agent': user_agent, 'load_cookies': load_cookies,
+            video_add_link_dictionary = {'header': header, 'load_cookies': load_cookies,
                                          'out': name_list[0], 'start_time': start_time, 'end_time': end_time, 'link': link_list[0], 'ip': ip,
                                          'port': port, 'proxy_user': proxy_user, 'proxy_passwd': proxy_passwd,
                                          'download_user': download_user, 'download_passwd': download_passwd,
                                          'connections': connections, 'limit_value': limit, 'download_path': download_path}
 
-            audio_add_link_dictionary = {'referer': referer, 'header': header, 'user_agent': user_agent, 'load_cookies': load_cookies,
+            audio_add_link_dictionary = {'header': header, 'load_cookies': load_cookies,
                                          'out': name_list[1], 'start_time': None, 'end_time': end_time, 'link': link_list[1], 'ip': ip,
                                          'port': port, 'proxy_user': proxy_user, 'proxy_passwd': proxy_passwd,
                                          'download_user': download_user, 'download_passwd': download_passwd,
