@@ -30,8 +30,8 @@ fi
 if [ "$resources" == "1" ];then
 
     # generate resource.py file
-    #pyrcc5 resources.qrc -o "$parent_dir/mounzil/gui/resources.py"
-    rcc -g python -o "$parent_dir/mounzil/gui/resources.py" resources.qrc
+    pyrcc5 resources.qrc -o "$parent_dir/mounzil/gui/resources.py"
+    #rcc -g python -o "$parent_dir/mounzil/gui/resources.py" resources.qrc
 
     echo  "$parent_dir/mounzil/gui/resources.py is generated!"
 fi
