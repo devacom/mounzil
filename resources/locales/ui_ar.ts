@@ -3,13 +3,13 @@
     <name>about_ui_tr</name>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="277"/>
-        <source>About Persepolis</source>
-        <translation>حول بيرسيبولس</translation>
+        <source>About Mounzil</source>
+        <translation>حول مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="218"/>
-        <source>Persepolis Download Manager</source>
-        <translation>مدير التحميل بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="220"/>
@@ -288,8 +288,8 @@ Ehsan Titish</translation>
     <name>after_download_ui_tr</name>
     <message>
         <location filename="../../mounzil/gui/after_download_ui.py" line="47"/>
-        <source>Persepolis Download Manager</source>
-        <translation>مدير التحميل بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/after_download_ui.py" line="107"/>
@@ -331,8 +331,8 @@ Ehsan Titish</translation>
     <name>log_window_ui_tr</name>
     <message>
         <location filename="../../mounzil/gui/log_window_ui.py" line="91"/>
-        <source>Persepolis Log</source>
-        <translation>سجل بيرسيبولس</translation>
+        <source>Mounzil Log</source>
+        <translation>سجل مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/log_window_ui.py" line="92"/>
@@ -364,8 +364,8 @@ Ehsan Titish</translation>
     <name>mainwindow_src_ui_tr</name>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="999"/>
-        <source>Persepolis</source>
-        <translation>بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="958"/>
@@ -374,8 +374,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2094"/>
-        <source>Persepolis is shutting down</source>
-        <translation>بيرسيبولس على وشك إغلاق</translation>
+        <source>Mounzil is shutting down</source>
+        <translation>مٌنزِل على وشك إغلاق</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2094"/>
@@ -404,8 +404,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1610"/>
-        <source>Aria2 didn&apos;t respond! be patient! Persepolis tries again in 2 seconds!</source>
-        <translation>Aria2 لا يستجيب! كن صبور! بيرسيبولس سيحاول مرة أخرى بعد ثانيتين!</translation>
+        <source>Aria2 didn&apos;t respond! be patient! Mounzil tries again in 2 seconds!</source>
+        <translation>Aria2 لا يستجيب! كن صبور! مٌنزِل سيحاول مرة أخرى بعد ثانيتين!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1633"/>
@@ -414,18 +414,18 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1634"/>
-        <source>Persepolis can not connect to Aria2</source>
-        <translation>بيرسيبولس لا يمكنه الإتصال بـ Aria2</translation>
+        <source>Mounzil can not connect to Aria2</source>
+        <translation>مٌنزِل لا يمكنه الإتصال بـ Aria2</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1618"/>
-        <source>Check your network &amp; Restart Persepolis</source>
-        <translation>تأكد من الشبكة لديك ثم أعد تشغيل بيرسيبولس</translation>
+        <source>Check your network &amp; Restart Mounzil</source>
+        <translation>تأكد من الشبكة لديك ثم أعد تشغيل مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1634"/>
-        <source>Restart Persepolis</source>
-        <translation>إعادة تشغيل بيرسيبولس</translation>
+        <source>Restart Mounzil</source>
+        <translation>إعادة تشغيل مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1640"/>
@@ -434,8 +434,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1659"/>
-        <source>Persepolis reconnected aria2 successfully</source>
-        <translation>بيرسيبولس اتصل بـ Aria2 بنجاح</translation>
+        <source>Mounzil reconnected aria2 successfully</source>
+        <translation>مٌنزِل اتصل بـ Aria2 بنجاح</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="1831"/>
@@ -524,8 +524,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2844"/>
-        <source>Persepolis is trying to connect!be patient!</source>
-        <translation>يحاول بيرسيبولس الاتصال! كن صبوراً!</translation>
+        <source>Mounzil is trying to connect!be patient!</source>
+        <translation>يحاول مٌنزِل الاتصال! كن صبوراً!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2888"/>
@@ -554,8 +554,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2883"/>
-        <source>Persepolis is trying to connect! be patient!</source>
-        <translation>يحاول بيرسيبولس الاتصال! كن صبوراً!</translation>
+        <source>Mounzil is trying to connect! be patient!</source>
+        <translation>يحاول مٌنزِل الاتصال! كن صبوراً!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/mainwindow.py" line="2888"/>
@@ -757,8 +757,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/mainwindow_ui.py" line="469"/>
-        <source>Persepolis Download Manager</source>
-        <translation>مدير التحميل بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/mainwindow_ui.py" line="401"/>
@@ -1207,8 +1207,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/progress.py" line="158"/>
-        <source>Persepolis is trying to connect! be patient!</source>
-        <translation>بيرسيبولس يحاول الاتصال! يرجى الانتظار!</translation>
+        <source>Mounzil is trying to connect! be patient!</source>
+        <translation>مٌنزِل يحاول الاتصال! يرجى الانتظار!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/progress.py" line="139"/>
@@ -1230,8 +1230,8 @@ Ehsan Titish</translation>
     <name>progress_ui_tr</name>
     <message>
         <location filename="../../mounzil/gui/progress_ui.py" line="50"/>
-        <source>Persepolis Download Manager</source>
-        <translation>مدير التحميل بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/progress_ui.py" line="200"/>
@@ -1313,13 +1313,13 @@ Ehsan Titish</translation>
     <name>setting_src_ui_tr</name>
     <message>
         <location filename="../../mounzil/scripts/setting.py" line="1075"/>
-        <source>&lt;b&gt;&lt;center&gt;Restart Persepolis Please!&lt;/center&gt;&lt;/b&gt;&lt;br&gt;&lt;center&gt;Some changes take effect after restarting Persepolis&lt;/center&gt;</source>
-        <translation>&lt;b&gt;&lt;center&gt; يرجى إعادة تشغيل بيرسيبولس! &lt;/center&gt;&lt;/b&gt;&lt;br&gt;&lt;center&gt; بعض التغييرات تكون فعالة بعد إعادة تشغيل بيرسيبولس &lt;/center&gt;</translation>
+        <source>&lt;b&gt;&lt;center&gt;Restart Mounzil Please!&lt;/center&gt;&lt;/b&gt;&lt;br&gt;&lt;center&gt;Some changes take effect after restarting Mounzil&lt;/center&gt;</source>
+        <translation>&lt;b&gt;&lt;center&gt; يرجى إعادة تشغيل مٌنزِل! &lt;/center&gt;&lt;/b&gt;&lt;br&gt;&lt;center&gt; بعض التغييرات تكون فعالة بعد إعادة تشغيل مٌنزِل &lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/setting.py" line="1077"/>
-        <source>Restart Persepolis!</source>
-        <translation>إعادة تشغيل بيرسيبولس!</translation>
+        <source>Restart Mounzil!</source>
+        <translation>إعادة تشغيل مٌنزِل!</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/setting.py" line="447"/>
@@ -1511,8 +1511,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/setting_ui.py" line="642"/>
-        <source>Run Persepolis at startup</source>
-        <translation>تشغيل بيرسيبولس عند بدء النظام</translation>
+        <source>Run Mounzil at startup</source>
+        <translation>تشغيل مٌنزِل عند بدء النظام</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/setting_ui.py" line="644"/>
@@ -1696,16 +1696,16 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/setting_ui.py" line="628"/>
-        <source>Start Persepolis in system tray, If browser is executed.</source>
-        <translation>ابدأ بيرسيبولس في صحن النظام، في حال تم تشغيل المتصفح.</translation>
+        <source>Start Mounzil in system tray, If browser is executed.</source>
+        <translation>ابدأ مٌنزِل في صحن النظام، في حال تم تشغيل المتصفح.</translation>
     </message>
 </context>
 <context>
     <name>text_ui_tr</name>
     <message>
         <location filename="../../mounzil/gui/text_queue_ui.py" line="263"/>
-        <source>Persepolis Download Manager</source>
-        <translation>مدير التحميل بيرسيبولس</translation>
+        <source>Mounzil</source>
+        <translation>مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/gui/text_queue_ui.py" line="265"/>
@@ -1812,8 +1812,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="53"/>
-        <source>The newest is the best , We recommend to update Persepolis</source>
-        <translation>النسخة الأحدث هي الأفضل، ننصح بتحديث بيرسيبولس</translation>
+        <source>The newest is the best , We recommend to update Mounzil</source>
+        <translation>النسخة الأحدث هي الأفضل، ننصح بتحديث مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="147"/>
@@ -1827,8 +1827,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="118"/>
-        <source>A newer Persepolis release is available</source>
-        <translation>يوجد هناك إصدار جديد لـ بيرسيبولس</translation>
+        <source>A newer Mounzil release is available</source>
+        <translation>يوجد هناك إصدار جديد لـ مٌنزِل</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="137"/>
@@ -1847,8 +1847,8 @@ Ehsan Titish</translation>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="59"/>
-        <source>This is Persepolis Download Manager version 3.1.0</source>
-        <translation>نسخة مدير التنزيل بيرسيبولس هذه 3.1.0</translation>
+        <source>This is Mounzil version 3.1.0</source>
+        <translation>نسخة مدير التنزيل مٌنزِل هذه 3.1.0</translation>
     </message>
 </context>
 <context>

@@ -135,8 +135,6 @@ if not_installed != '':
     print('########################')
     print('Some dependencies are not installed .It causes some problems for mounzil! : \n')
     print(not_installed + '\n\n')
-    print('Read this link for more information: \n')
-    print('https://github.com/devacom/mounzil/wiki/git-installation-instruction\n\n')
     answer = input('Do you want to continue?(y/n)')
     if answer not in ['y', 'Y', 'yes']:
         sys.exit(1)
@@ -145,7 +143,7 @@ if sys.argv[1] == "test":
     print('We have not unit test :)')
     sys.exit('0')
 
-DESCRIPTION = 'mounzil Download Manager'
+DESCRIPTION = 'Mounzil'
 
 if os_type == 'Linux':
     DATA_FILES = [
@@ -191,7 +189,7 @@ print('man page file is generated!')
 
 setup(
     name='mounzil',
-    version='3.2.0',
+    version='0.1.3',
     license='GPL3',
     description=DESCRIPTION,
     long_description=DESCRIPTION,
