@@ -1,7 +1,7 @@
 # Maintainer: Taha H. Nouibat <devacom at protonmail dot com>
 
 pkgname='mounzil-git'
-pkgver=1.0.0
+pkgver=0.1.3
 pkgrel=1
 pkgdesc="Qt front-end for aria2 download manager (Github version)."
 arch=('any')
@@ -17,7 +17,7 @@ sha256sums=('SKIP')
 
 pkgver() {
     cd ${pkgname%-git}
-    #git describe --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+    git describe --tags --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
