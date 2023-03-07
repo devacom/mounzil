@@ -167,7 +167,7 @@ parser.add_argument('--tray', action='store_true',
                     help="mounzil is starting in tray icon. It's useful when you want to put mounzil in system's startup.")
 parser.add_argument('--parent-window', action='store', nargs=1,
                     help='this switch is used for chrome native messaging in Windows')
-parser.add_argument('--version', action='version', version='mounzil Download Manager 3.2.0')
+parser.add_argument('--version', action='version', version='Mpunzil 0.1.3')
 
 
 # Clears unwanted args ( like args from Browers via NHM )

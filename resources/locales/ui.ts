@@ -15,7 +15,7 @@
     </message>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="207"/>
-        <source>Version 3.2.0</source>
+        <source>Version 0.1.3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1804,7 +1804,7 @@ Ehsan Titish</source>
     </message>
     <message>
         <location filename="../../mounzil/scripts/update.py" line="67"/>
-        <source>This is mounzil Download Manager version 3.2.0</source>
+        <source>This is Mounzil version 0.3.1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
