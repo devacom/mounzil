@@ -59,7 +59,7 @@ class MediaListFetcherThread(QThread):
         # youtube options must be added to yt_dlp_options_dict in dictionary format
         self.yt_dlp_options_dict = {'dump_single_json': True,
                                         'quiet': True,
-                                        'noplaylist': True,
+                                        'no_playlist': True,
                                         'no_warnings': True
                                         }
 
@@ -99,7 +99,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = yt_dlp.YtDLP(self.yt_dlp_options_dict)
+            ydl = yt_dlp.YoutubeDL(self.yt_dlp_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,
@@ -233,7 +233,7 @@ class VideoFinderAddLink(AddLinkWindow):
                        self.audio_format_selection_comboBox]:
             advanced_format_selection_horizontalLayout.addWidget(widget)
 
-        # Set Texts marked by nouibat
+        # Set Texts
         self.url_submit_pushButtontton.setText(QCoreApplication.translate("ytaddlink_src_ui_tr", 'Fetch Media List'))
         self.select_format_label.setText(QCoreApplication.translate("ytaddlink_src_ui_tr", 'Select a format'))
 
