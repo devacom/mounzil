@@ -67,9 +67,9 @@ class MediaListFetcherThread(QThread):
         self.yt_dlp_options_dict['cookies'] = str(self.cookie_path)
 
         # load_cookies
-        if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
+        #if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
             # We need to convert raw cookies to http cookie file to use with yt-dlp.
-            self.cookies = self.makeHttpCookie(video_dict['load_cookies'])
+         #   self.cookies = self.makeHttpCookie(video_dict['load_cookies'])
 
         # Proxy
         if 'ip' in video_dict.keys() and video_dict['ip']:
@@ -99,7 +99,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = yt_dlp.YoutubeDL(self.yt_dlp_options_dict)
+            ydl = yt_dlp.YtDLP(self.yt_dlp_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,
