@@ -223,7 +223,7 @@ class MainWindow_Ui(QMainWindow):
         icons = ':/' + \
             str(self.mounzil_setting.value('settings/icons')) + '/'
 
-        self.setWindowTitle(QCoreApplication.translate("mainwindow_ui_tr", "mounzil Download Manager"))
+        self.setWindowTitle(QCoreApplication.translate("mainwindow_ui_tr", "Mounzil"))
         self.setWindowIcon(QIcon.fromTheme('mounzil', QIcon(':/mounzil.svg')))
 
         self.centralwidget = QWidget(self)
@@ -474,7 +474,7 @@ class MainWindow_Ui(QMainWindow):
         # statusbar
         self.statusbar = QStatusBar(self)
         self.setStatusBar(self.statusbar)
-        self.statusbar.showMessage(QCoreApplication.translate("mainwindow_ui_tr", "mounzil Download Manager"))
+        self.statusbar.showMessage(QCoreApplication.translate("mainwindow_ui_tr", "Mounzil"))
 
         # toolBar
         self.toolBar2 = QToolBar(self)

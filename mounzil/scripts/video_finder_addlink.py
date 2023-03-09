@@ -13,7 +13,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-import youtube_dl
+
 try:
     from PySide6.QtWidgets import QCheckBox, QPushButton, QTextEdit, QFrame, QLabel, QComboBox, QHBoxLayout, QApplication
     from PySide6.QtCore import Qt, QThread, Signal, QCoreApplication, QTranslator, QLocale
@@ -100,7 +100,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = yt_dlp.YoutubeDL(self.youtube_dl_options_dict)
+            ydl = youtube_dl.YoutubeDL(self.youtube_dl_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,
