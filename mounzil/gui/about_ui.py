@@ -203,7 +203,7 @@ class AboutWindow_Ui(QWidget):
         self.setWindowTitle(QCoreApplication.translate("about_ui_tr", "About mounzil"))
 
         # about_tab
-        self.title_label.setText(QCoreApplication.translate("about_ui_tr", "mounzil Download Manager"))
+        self.title_label.setText(QCoreApplication.translate("about_ui_tr", "Mounzil Download Manager"))
         self.version_label.setText(QCoreApplication.translate("about_ui_tr", "Version 0.1.3"))
         self.site2_label.setText(QCoreApplication.translate("about_ui_tr",
                                                             "<a href=https://devacom.github.io>https://devacom.github.io</a>",

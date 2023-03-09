@@ -9,11 +9,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="206"/>
-        <source>mounzil Download Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../mounzil/gui/about_ui.py" line="207"/>
         <source>Version 0.1.3</source>
         <translation type="unfinished"></translation>
@@ -63,6 +58,11 @@ Ehsan Titish</source>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="243"/>
         <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mounzil/gui/about_ui.py" line="206"/>
+        <source>Mounzil Download Manager</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1859,42 +1859,42 @@ Ehsan Titish</source>
 <context>
     <name>ytaddlink_src_ui_tr</name>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="173"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="162"/>
         <source>Video Finder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="248"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="237"/>
         <source>Fetch Media List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="249"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="238"/>
         <source>Select a format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="251"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="240"/>
         <source>Video format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="252"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="241"/>
         <source>Audio format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="254"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="243"/>
         <source>Advanced options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="334"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="323"/>
         <source>Please enter a valid video link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="355"/>
+        <location filename="../../mounzil/scripts/video_finder_addlink.py" line="344"/>
         <source>Fetching Media Info...</source>
         <translation type="unfinished"></translation>
     </message>
