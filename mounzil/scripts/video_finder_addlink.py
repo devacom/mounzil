@@ -57,14 +57,14 @@ class MediaListFetcherThread(QThread):
         self.cookie_path = os.path.join(mounzil_tmp, '.{}{}'.format(time(), random()))
 
         # youtube options must be added to yt_dlp_options_dict in dictionary format
-        self.yt_dlp_options_dict = {'dump_single_json': True,
+        self.ydl_options_dict = {'dump_single_json': True,
                                         'quiet': True,
                                         'no_playlist': True,
                                         'no_warnings': True
                                         }
 
         # cookies
-        self.yt_dlp_options_dict['cookies'] = str(self.cookie_path)
+        self.ydl_options_dict['cookies'] = str(self.cookie_path)
 
         # load_cookies
         #if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
@@ -83,8 +83,8 @@ class MediaListFetcherThread(QThread):
 
         if 'download_user' in video_dict.keys() and video_dict['download_user']:
             try:
-                self.yt_dlp_options_dict['username'] = str(video_dict['download_user'])
-                self.yt_dlp_options_dict['password'] = str(video_dict['download_passwd'])
+                self.ydl_options_dict['username'] = str(video_dict['download_user'])
+                self.ydl_options_dict['password'] = str(video_dict['download_passwd'])
             except:
                 pass
 
@@ -99,7 +99,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = yt_dlp.YoutubeDL(self.yt_dlp_options_dict)
+            ydl = yt_dlp.YoutubeDL(self.ydl_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,
