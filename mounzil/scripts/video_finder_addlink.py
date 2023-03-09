@@ -13,6 +13,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+import youtube_dl
 try:
     from PySide6.QtWidgets import QCheckBox, QPushButton, QTextEdit, QFrame, QLabel, QComboBox, QHBoxLayout, QApplication
     from PySide6.QtCore import Qt, QThread, Signal, QCoreApplication, QTranslator, QLocale
@@ -35,7 +36,7 @@ import os
 
 # write yt_dlp version in log
 logger.sendToLog('yt_dlp version: '
-                 + str(yt_dlp.version.__version__),
+                 + str(youtube_dl.version.__version__),
                  'INFO')
 
 # download manager config folder .
@@ -56,15 +57,15 @@ class MediaListFetcherThread(QThread):
 
         self.cookie_path = os.path.join(mounzil_tmp, '.{}{}'.format(time(), random()))
 
-        # youtube options must be added to yt_dlp_options_dict in dictionary format
-        self.ydl_options_dict = {'dump_single_json': True,
+        # youtube options must be added to youtube_dl_options_dict in dictionary format
+        self.youtube_dl_options_dict = {'dump_single_json': True,
                                         'quiet': True,
                                         'no_playlist': True,
                                         'no_warnings': True
                                         }
 
         # cookies
-        self.ydl_options_dict['cookies'] = str(self.cookie_path)
+        self.youtube_dl_options_dict['cookies'] = str(self.cookie_path)
 
         # load_cookies
         #if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
@@ -77,14 +78,14 @@ class MediaListFetcherThread(QThread):
                 # ip + port
                 ip_port = 'http://{}:{}'.format(video_dict['ip'], video_dict['port'])
 
-                self.yt_dlp_options_dict['proxy'] = str(ip_port)
+                self.youtube_dl_options_dict['proxy'] = str(ip_port)
             except:
                 pass
 
         if 'download_user' in video_dict.keys() and video_dict['download_user']:
             try:
-                self.ydl_options_dict['username'] = str(video_dict['download_user'])
-                self.ydl_options_dict['password'] = str(video_dict['download_passwd'])
+                self.youtube_dl_options_dict['username'] = str(video_dict['download_user'])
+                self.youtube_dl_options_dict['password'] = str(video_dict['download_passwd'])
             except:
                 pass
 
@@ -99,7 +100,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            ydl = yt_dlp.YoutubeDL(self.ydl_options_dict)
+            ydl = yt_dlp.YoutubeDL(self.youtube_dl_options_dict)
             with ydl:
                 result = ydl.extract_info(
                     self.youtube_link,
