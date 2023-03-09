@@ -30,13 +30,14 @@ from time import time, sleep
 from functools import partial
 from random import random
 from copy import deepcopy
+import yt_dlp
 from yt_dlp import YoutubeDL
 import re
 import os
 
 # write yt_dlp version in log
 logger.sendToLog('yt_dlp version: '
-                 + str(youtube_dl.version.__version__),
+                 + str(yt_dlp.version.__version__),
                  'INFO')
 
 # download manager config folder .
