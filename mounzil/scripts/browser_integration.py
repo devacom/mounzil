@@ -147,7 +147,7 @@ def browserIntegration(browser):
 
     # WebExtension native hosts file prototype
     webextension_json_connector = {
-        "name": "com.mounzil.pdmchromewrapper",
+        "name": "com.mounzil.mdmchromewrapper",
         "type": "stdio",
         "path": str(exec_path),
         "description": "Integrate mounzil with %s using WebExtensions" % (browser)
@@ -160,13 +160,13 @@ def browserIntegration(browser):
     # Add firefox keys
     elif browser == BROWSER.FIREFOX:
         webextension_json_connector["allowed_extensions"] = [
-            "com.mounzil.pdmchromewrapper@mounzil.github.io",
-            "com.mounzil.pdmchromewrapper.offline@mounzil.github.io"
+            "com.mounzil.mdmchromewrapper@mounzil.github.io",
+            "com.mounzil.mdmchromewrapper.offline@mounzil.github.io"
         ]
 
     # Build final path
     native_message_file = os.path.join(
-        native_message_folder, 'com.mounzil.pdmchromewrapper.json')
+        native_message_folder, 'com.mounzil.mdmchromewrapper.json')
 
     osCommands.makeDirs(native_message_folder)
 
@@ -194,15 +194,15 @@ def browserIntegration(browser):
         # add the key to the windows registry
         if browser in BROWSER.CHROME_FAMILY:
             try:
-                # create pdmchromewrapper key under NativeMessagingHosts
+                # create mdmchromewrapper key under NativeMessagingHosts
                 winreg.CreateKey(winreg.HKEY_CURRENT_USER,
-                                 "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\com.mounzil.pdmchromewrapper")
-                # open a connection to pdmchromewrapper key
+                                 "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\com.mounzil.mdmchromewrapper")
+                # open a connection to mdmchromewrapper key
                 gintKey = winreg.OpenKey(
-                    winreg.HKEY_CURRENT_USER, "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\com.mounzil.pdmchromewrapper", 0, winreg.KEY_ALL_ACCESS)
+                    winreg.HKEY_CURRENT_USER, "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\com.mounzil.mdmchromewrapper", 0, winreg.KEY_ALL_ACCESS)
                 # set native_message_file as key value
                 winreg.SetValueEx(gintKey, '', 0, winreg.REG_SZ, native_message_file)
-                # close connection to pdmchromewrapper
+                # close connection to mdmchromewrapper
                 winreg.CloseKey(gintKey)
 
                 json_done = True
@@ -213,15 +213,15 @@ def browserIntegration(browser):
 
         elif browser == BROWSER.FIREFOX:
             try:
-                # create pdmchromewrapper key under NativeMessagingHosts for firefox
+                # create mdmchromewrapper key under NativeMessagingHosts for firefox
                 winreg.CreateKey(winreg.HKEY_CURRENT_USER,
-                                 "SOFTWARE\\Mozilla\\NativeMessagingHosts\\com.mounzil.pdmchromewrapper")
-                # open a connection to pdmchromewrapper key for firefox
+                                 "SOFTWARE\\Mozilla\\NativeMessagingHosts\\com.mounzil.mdmchromewrapper")
+                # open a connection to mdmchromewrapper key for firefox
                 fintKey = winreg.OpenKey(
-                    winreg.HKEY_CURRENT_USER, "SOFTWARE\\Mozilla\\NativeMessagingHosts\\com.mounzil.pdmchromewrapper", 0, winreg.KEY_ALL_ACCESS)
+                    winreg.HKEY_CURRENT_USER, "SOFTWARE\\Mozilla\\NativeMessagingHosts\\com.mounzil.mdmchromewrapper", 0, winreg.KEY_ALL_ACCESS)
                 # set native_message_file as key value
                 winreg.SetValueEx(fintKey, '', 0, winreg.REG_SZ, native_message_file)
-                # close connection to pdmchromewrapper
+                # close connection to mdmchromewrapper
                 winreg.CloseKey(fintKey)
 
                 json_done = True
