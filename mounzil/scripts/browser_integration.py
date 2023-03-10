@@ -160,8 +160,8 @@ def browserIntegration(browser):
     # Add firefox keys
     elif browser == BROWSER.FIREFOX:
         webextension_json_connector["allowed_extensions"] = [
-            "com.mounzil.pdmchromewrapper@devacom.github.io",
-            "com.mounzil.pdmchromewrapper.offline@devacom.github.io"
+            "com.mounzil.pdmchromewrapper@mounzil.github.io",
+            "com.mounzil.pdmchromewrapper.offline@mounzil.github.io"
         ]
 
     # Build final path
