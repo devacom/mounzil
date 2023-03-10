@@ -131,7 +131,7 @@ def browserIntegration(browser):
         current_directory = os.path.dirname(cwd)
 
         exec_path = os.path.join(
-            current_directory, 'mounzil Download Manager.exe')
+            current_directory, 'mounzil.exe')
 
         # the execution path in json file for Windows must in form of
         # c:\\Users\\...\\mounzil Download Manager.exe , so we need 2
@@ -250,7 +250,7 @@ def browserIntegration(browser):
             current_directory = os.path.dirname(cwd)
 
             mounzil_path = os.path.join(
-                current_directory, 'mounzil Download Manager')
+                current_directory, 'mounzil')
         else:
             mounzil_path = 'mounzil'
 
