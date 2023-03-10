@@ -204,7 +204,7 @@ class AboutWindow_Ui(QWidget):
 
         # about_tab
         self.title_label.setText(QCoreApplication.translate("about_ui_tr", "Mounzil Download Manager"))
-        self.version_label.setText(QCoreApplication.translate("about_ui_tr", "Version 0.1.3"))
+        self.version_label.setText(QCoreApplication.translate("about_ui_tr", "Version 1.0.0"))
         self.site2_label.setText(QCoreApplication.translate("about_ui_tr",
                                                             "<a href=https://devacom.github.io>https://devacom.github.io</a>",
                                                             "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))

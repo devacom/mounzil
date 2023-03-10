@@ -1,7 +1,7 @@
 # Maintainer: Taha H. Nouibat <devacom at protonmail dot com>
 
 pkgname='mounzil-git'
-pkgver=0.1.3
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Qt front-end for aria2 download manager (Github version)."
 arch=('any')

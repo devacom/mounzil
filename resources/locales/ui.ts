@@ -10,7 +10,7 @@
     </message>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="207"/>
-        <source>Version 0.1.3</source>
+        <source>Version 1.0.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

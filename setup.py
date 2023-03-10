@@ -189,7 +189,7 @@ print('man page file is generated!')
 
 setup(
     name='mounzil',
-    version='0.1.3',
+    version='1.0.0',
     license='GPL3',
     description=DESCRIPTION,
     long_description=DESCRIPTION,
