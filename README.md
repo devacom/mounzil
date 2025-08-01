@@ -12,6 +12,7 @@ Mounzil is a download manager based on Mounzil which is a graphical user interfa
 - Scheduling downloads
 - Download queuing
 - Download youtube videos and more ...
+- [Firefox Add-ons] (https://addons.mozilla.org/en-US/firefox/addon/mounzil-integration)
 
 ### Credits
 
