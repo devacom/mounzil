@@ -9,6 +9,7 @@ BuildArch:      noarch
 BuildRequires:  python310-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  python310-setuptools
+BuildRequires:  appstream-glib
 BuildRequires:  libappstream-glib8
 # libnotify is required for notify-send
 Requires:       aria2 libnotify4 python310-qt5 python310-requests
